@@ -1,6 +1,8 @@
 # Jump Game
 
-Welcome to Jump Game! This is a simple browser-based game where you control a character and try to avoid obstacles.
+Welcome to Jump Game! This is a simple browser-based game where you control a character and try to avoid obstacles. 
+
+Play the game [here](https://waelalturi.github.io/Jump_Game/)!
 
 ## Files Included
 
