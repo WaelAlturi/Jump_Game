@@ -1,23 +1,61 @@
+body {
+  background-color: black;
+}
 .game-container {
   width: 100%;
   height: 600px;
-  border: 2px solid black;
+  background-image: url(/images/start-game.png);
+  background-size: cover;
+  animation: slide 30s linear infinite, filter 0.3s ease;
+}
+@keyframes slide {
+  0% {
+    background-position: 3840px 0;
+  }
+  100% {
+    background-position: -3840px 0;
+  }
+}
+.score {
+  margin: 0;
+  margin-left: 10px;
+  color: #fff;
+  display: none;
 }
 .character {
-  background-color: black;
-  width: 50px;
+  width: 120px;
   height: 150px;
-  margin-left: 8px;
+  margin-left: 15px;
   position: relative;
-  top: 450px;
+  top: 350px;
   left: 0%;
+  display: none;
 }
 .obstacle {
-  background-color: red;
-  width: 50px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   position: relative;
-  top: 370px;
-  left: 95%;
+  top: 365px;
+  left: 85%;
   transition: left 2s ease;
+  display: none;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button h3 {
+  font-size: 35px;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 50px;
+  background: white;
+  cursor: pointer;
+}
+
+.button h3:hover {
+  background-color: rgb(255, 102, 0);
+  color: #fff;
 }
