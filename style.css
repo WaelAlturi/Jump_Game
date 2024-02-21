@@ -4,7 +4,7 @@ body {
 .game-container {
   width: 100%;
   height: 600px;
-  background-image: url(/images/start-game.png);
+  background-image: url(./images/start-game.png);
   background-size: cover;
   animation: slide 30s linear infinite, filter 0.3s ease;
 }
