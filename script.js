@@ -50,6 +50,7 @@ function gameLoop() {
       alert("game Over");
       score = 0;
       enemySpeed = 35000;
+      start.style.display = "unset";
       clearInterval(game);
     } else {
       obstacle.style.transition = "left 10s ease";
@@ -59,7 +60,6 @@ function gameLoop() {
       scoreBoreder.innerHTML = "SCORE:" + score;
     }
   }, 10);
-  startButton.style.display = "none";
 }
 function conditions() {
   const characterRect = character.getBoundingClientRect();
